@@ -23,11 +23,11 @@ static int GetMax(int[] numbers)
 {
     var max = numbers[0];
         
-    foreach (var number in numbers)
+    foreach (var n in numbers)
     {
-        if (number > max)
+        if (n > max)
         {
-            max = number;
+            max = n;
         }    
     }
 
