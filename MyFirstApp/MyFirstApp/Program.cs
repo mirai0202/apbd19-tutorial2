@@ -17,4 +17,21 @@ static double GetAverage(int[] numbers)
 
 int[] numbers = {1, 2, 3, 4};
 double average = GetAverage(numbers);
-Console.Write(average);
+Console.WriteLine(average);
+
+static int GetMax(int[] numbers)
+{
+    var max = numbers[0];
+        
+    foreach (var number in numbers)
+    {
+        if (number > max)
+        {
+            max = number;
+        }    
+    }
+
+    return max;
+}
+
+Console.WriteLine(GetMax(numbers));
